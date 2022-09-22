@@ -60,7 +60,7 @@ else:
             print("January ",end="")
             mdy(day,year)
         elif month=='02':                               #Feb
-            if (int(year)%4)==0:
+            if (int(year) % 400 == 0) or (int(year) % 100 != 0 and int(year) %4 == 0):
                 if int(day)>29:                             #Leap_Year
                     date_error()
                     print("' In February Month")
