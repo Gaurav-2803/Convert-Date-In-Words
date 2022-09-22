@@ -1,3 +1,12 @@
+''' 
+
+
+THIS CODE GOOD!!!!!
+
+
+'''
+
+
 import os       
 """Fuctions"""      
 clear=lambda:os.system("cls")                           #Clear_Fn
