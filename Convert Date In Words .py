@@ -1,7 +1,7 @@
 ''' 
 
 
-THIS CODE GOOD!!!!!
+THIS CODE IS GOOD!!!!!
 
 
 '''
