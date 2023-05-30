@@ -1,26 +1,26 @@
-import os       
+# import os       
 """Fuctions"""      
-clear=lambda:os.system("cls")                           #Clear_Fn
-color_brwhite=lambda:os.system("color 0f")              #Default    #Bright_White_Color_Fn
-color_green=lambda:os.system("color 0a")                #Success    #LiGreen_Color_Fn
-color_red=lambda:os.system("color 0c")                  #Errors     #Red_Color_Fn
+# clear=lambda:os.system("cls")                           #Clear_Fn
+# color_brwhite=lambda:os.system("color 0f")              #Default    #Bright_White_Color_Fn
+# color_green=lambda:os.system("color 0a")                #Success    #LiGreen_Color_Fn
+# color_red=lambda:os.system("color 0c")                  #Errors     #Red_Color_Fn
 def mdy(d,y):                                           #To_Print_Day&Year  
-    color_green()                                            
+#     color_green()                                            
     print(day,end="")
     print(",",y)
 def date_error():                                       #To_Print_Error
-    color_red()                         
+#     color_red()                         
     print("Invalid Input, Date Cannot Be ",end='')
     print("'",end="")
     print(day,end="")
 
 """main"""
-clear()                                         
-color_brwhite()     
+# clear()                                         
+# color_brwhite()     
 error,date1=0,""                            
 date=list(input("Enter date In Format 'MM/DD/YYYY' : "))
 if len(date)!=10:                                       #Length_Of_Date_Error
-    color_red()                                 
+#     color_red()                                 
     print("Error In Date, It Must Be Length Of '10' Including Slash Not With Length",end='')
     print("'",end="")
     print(len(date),end="")
@@ -32,7 +32,7 @@ else:
     for i in range(9):                                  #Error_In_Dates_Post
         if i!=2 and i!=5:
             if date[i].isnumeric()==False:
-                color_red()
+#                 color_red()
                 print("Incorrect Date < '",date[i],"' Must Not Present In Date :",date1,"> At Postion :",i+1)
                 error+=1
         else:
@@ -42,7 +42,7 @@ else:
                 print("Incorrect Date < ' / ' Must Present In Date At Correct Position> That Is :",i+1)
     if error==0:    
         if int(month)>12 or int(month)<=0:              #Month_Error
-            color_red()                                 
+#             color_red()                                 
             print("Invalid Input, Month Cannot Be,",end='')
             print("'",end="")
             print(month,end="")
@@ -51,7 +51,7 @@ else:
             date_error()
             print("'")
         elif int(year)<=0:                              #Year_Error
-            color_red()                                 
+#             color_red()                                 
             print("Invalid Input, Year Cannot Be,",end='')
             print("'",end="")
             print(year,end="")
@@ -85,7 +85,7 @@ else:
                 print("April ",end="")
                 mdy(day,year)
         elif month=='05':                               #May
-            color_green()                                        
+#             color_green()                                        
             print("May ",end="")
             mdy(day,year)
         elif month=='06':                               #June
